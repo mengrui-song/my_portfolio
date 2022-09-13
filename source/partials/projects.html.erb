@@ -2,19 +2,32 @@
   <div class="col-12">
     <div class="container">
       <div id="projects">
-        <h2> Projects</h2>
+        <h1 class=""> > Works</h1>
         <div class="cards">
           <% data.projects.each do |project| %>
             <div class="card-product">
               <%= image_tag project.image, alt: "project image" %>
               <div class="card-product-infos w-100">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h2><%= project.name %></h2>
-                  <% link_to project.url, class: 'external-link', target: '_blank' do %>
-                    <i class="fas fa-external-link-alt"></i>
-                  <% end %>
-                </div>
+                <h2><%= project.name %></h2>
                 <p><%= project.description %></p>
+								<p class="gray-text"><%= project.tools %></p>
+								<div class="d-flex">
+								<% if project.live_url %>
+									<% link_to project.live_url, class: 'external-link', target: '_blank' do %>
+										<i class="fas fa-external-link-alt"></i>
+									<% end %>
+								<% end %>
+								<% if project.github_url %>
+									<% link_to project.github_url, class: 'external-link', target: '_blank' do %>
+										<i class="fa-brands fa-square-github"></i>
+									<% end %>
+								<% end %>
+								<% if project.youtube_url %>
+									<% link_to project.youtube_url, class: 'external-link', target: '_blank' do %>
+										<i class="fa-brands fa-square-youtube"></i>
+									<% end %>
+								<% end %>
+								</div>
               </div>
             </div>
           <% end %>

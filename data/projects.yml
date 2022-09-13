@@ -1,19 +1,22 @@
-- name: Longest Word Game
+- name: Health_Way
+  description: Help HR to track employee's health check status and receive health check results by email or fax
+  tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
+  image: projects/placeholder.png
+  live_url: https://www.google.com
+  github_url: https://github.com/SummerSoong/Health_Way
+  youtube_url: https://youtube.com
+
+- name: Player_Won
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
 
-- name: Movie Watchlist
+- name: Watch_list
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
 
-- name: Airbnb
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-
-- name: Final project
+- name: Yogi_Life
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
