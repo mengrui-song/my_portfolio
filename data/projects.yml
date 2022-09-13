@@ -1,7 +1,7 @@
 - name: Health_Way
-  description: Help HR to track employee's health check status and receive health check results by email or fax
+  description: An app helps HR to track employee's health check status and digitalizes employee's health check results.
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image: projects/placeholder.png
+  image: projects/health_way.png
   live_url: https://www.google.com
   github_url: https://github.com/SummerSoong/Health_Way
   youtube_url: https://youtube.com
