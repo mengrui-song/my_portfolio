@@ -1,4 +1,4 @@
-- name: Health_Way
+- name: HealthWay
   description: An app helps HR to track employee's health check status and digitalizes employee's health check results.
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
   image: projects/health_way.png
@@ -6,17 +6,26 @@
   github_url: https://github.com/SummerSoong/Health_Way
   youtube_url: https://youtube.com
 
-- name: Player_Won
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
+- name: PlayerWon
+  description: An app connects game players and provide them a platform to exchange gaming skills
+  tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
+  image: projects/health_way.png
+  live_url: https://www.google.com
+  github_url: https://github.com/SummerSoong/Player_Won
+  youtube_url: https://youtube.com
 
-- name: Watch_list
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
+# - name: Watchlist
+#   description:
+#   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
+#   image: projects/health_way.png
+#   live_url: https://www.google.com
+#   github_url: https://github.com/SummerSoong/
+#   youtube_url: https://youtube.com
 
-- name: Yogi_Life
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
+# - name: YogiLife
+#   description:
+#   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
+#   image: projects/health_way.png
+#   live_url: https://www.google.com
+#   github_url: https://github.com/SummerSoong/
+#   youtube_url: https://youtube.com
