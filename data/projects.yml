@@ -2,17 +2,17 @@
   description: An app helps HR to track employee's health check status and digitalizes employee's health check results.
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
   image: projects/health_way.png
-  live_url: https://www.google.com
+  live_url: https://www.healthway.live
   github_url: https://github.com/SummerSoong/Health_Way
-  youtube_url: https://youtube.com
+  # youtube_url: https://youtube.com
 
 - name: PlayerWon
   description: An app connects game players and provide them a platform to exchange gaming skills
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image: projects/health_way.png
-  live_url: https://www.google.com
-  github_url: https://github.com/SummerSoong/Player_Won
-  youtube_url: https://youtube.com
+  image: projects/player_won.png
+  live_url: https://player-won.herokuapp.com/
+  github_url: https://github.com/SummerSoong/player-won
+  # youtube_url: https://youtube.com
 
 # - name: Watchlist
 #   description:
