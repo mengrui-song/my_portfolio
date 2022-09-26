@@ -14,13 +14,13 @@
   github_url: https://github.com/SummerSoong/player-won
   # youtube_url: https://youtube.com
 
-# - name: Watchlist
-#   description:
-#   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-#   image: projects/health_way.png
-#   live_url: https://www.google.com
-#   github_url: https://github.com/SummerSoong/
-#   youtube_url: https://youtube.com
+- name: Watchlist
+  description: An app to record your own movie watch list, you can find more than 800 thousand movies from The Movie Database
+  tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
+  image: projects/watch_list.png
+  live_url: https://watch-list-by-song.herokuapp.com/lists
+  github_url: https://github.com/SummerSoong/watch-list-by-song
+  # youtube_url: https://youtube.com
 
 # - name: YogiLife
 #   description:
