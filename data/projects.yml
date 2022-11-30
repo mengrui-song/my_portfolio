@@ -1,26 +1,29 @@
 - name: HealthWay
   description: An app helps HR to track employee's health check status and digitalizes employee's health check results.
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image: projects/health_way.png
+  image:
+    - projects/health_way/00
+    - projects/health_way/01
+    - projects/health_way/02
+    - projects/health_way/03
   live_url: https://www.healthway.live
   github_url: https://github.com/SummerSoong/Health_Way
-  # youtube_url: https://youtube.com
 
 - name: PlayerWon
   description: An app connects game players and provide them a platform to exchange gaming skills
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image: projects/player_won.png
+  image:
+    - projects/PlayerWon/00
   live_url: https://player-won.herokuapp.com/
   github_url: https://github.com/SummerSoong/player-won
-  # youtube_url: https://youtube.com
 
 - name: Watchlist
   description: An app to record your own movie watch list, you can find more than 800 thousand movies from The Movie Database
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image: projects/watch_list.png
+  image:
+    - projects/Watchlist/00
   live_url: https://watch-list-by-song.herokuapp.com/lists
   github_url: https://github.com/SummerSoong/watch-list-by-song
-  # youtube_url: https://youtube.com
 
 # - name: YogiLife
 #   description:
