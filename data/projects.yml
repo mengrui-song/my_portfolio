@@ -1,27 +1,36 @@
 - name: HealthWay
   description: An app helps HR to track employee's health check status and digitalizes employee's health check results.
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image:
-    - projects/health_way/00
-    - projects/health_way/01
-    - projects/health_way/02
-    - projects/health_way/03
+  image: [
+    { path: projects/health_way/00,
+      desc: HR sets a time frame for health },
+    { path: projects/health_way/01,
+      desc: Employee can assign a day and clinic to do the health check },
+    { path: projects/health_way/02,
+      desc: HR can check the status of employee’s health checks },
+    { path: projects/health_way/03,
+      desc: Employee will show the info to clinic and clinic can send health check result by Email or Fax }
+  ]
   live_url: https://www.healthway.live
   github_url: https://github.com/SummerSoong/Health_Way
 
 - name: PlayerWon
   description: An app connects game players and provide them a platform to exchange gaming skills
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image:
-    - projects/PlayerWon/00
+  image: [
+    { path: projects/PlayerWon/00,
+      desc: hello}
+  ]
   live_url: https://player-won.herokuapp.com/
   github_url: https://github.com/SummerSoong/player-won
 
 - name: Watchlist
   description: An app to record your own movie watch list, you can find more than 800 thousand movies from The Movie Database
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image:
-    - projects/Watchlist/00
+  image: [
+    { path: projects/Watchlist/00,
+      desc: hello}
+  ]
   live_url: https://watch-list-by-song.herokuapp.com/lists
   github_url: https://github.com/SummerSoong/watch-list-by-song
 
