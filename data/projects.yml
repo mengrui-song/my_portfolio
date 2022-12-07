@@ -19,7 +19,7 @@
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
   image: [
     { path: projects/PlayerWon/00,
-      desc: hello}
+      desc: }
   ]
   live_url: https://player-won.herokuapp.com/
   github_url: https://github.com/SummerSoong/player-won
@@ -29,7 +29,7 @@
   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
   image: [
     { path: projects/Watchlist/00,
-      desc: hello}
+      desc: }
   ]
   live_url: https://watch-list-by-song.herokuapp.com/lists
   github_url: https://github.com/SummerSoong/watch-list-by-song
