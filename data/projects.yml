@@ -31,7 +31,7 @@
     { path: projects/Watchlist/00,
       desc: }
   ]
-  live_url: https://watch-list-by-song.herokuapp.com/lists
+  live_url: https://watch-list-by-song.fly.dev/
   github_url: https://github.com/SummerSoong/watch-list-by-song
 
 # - name: YogiLife
