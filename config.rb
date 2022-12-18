@@ -46,3 +46,4 @@ page '/*.txt', layout: false
 # end
 
 activate :html_beautify
+# activate :sprockets
