@@ -1,46 +1,42 @@
 <%# <div class="row my-5">
   <div class="col-12"> %>
-    <div class="about">
-      <h1 class="white-title">Hello👋🏼, I'm Mengrui</h1>
-      <div class="d-flex pt-3">
-				<div class="profile-photo">
-					<img src="images/profile_photo.jpg" alt="profile photo" class="profile-photo">
-				</div>
-				<div class="about-info">
-					<div class="self-intro">
-						<p class="text-white">
-							Hello, I'm Mengrui, a full stack Web developer based in Tokyo who loves to code and design websites!
-						</p>
-						<p class="text-white">
-							I am passionate about learning new technologies and making websites more efficient and stable.
-						</p>
-						<p class="text-white">
-							In my free time I enjoy hugging my beatiful cat Cumin,
-							<a class="text-white" href="https://summerrock1017.wixsite.com/my-site">illustrating</a>
-							and doing yoga, I am also a registered RYT200 yoga teacher.
-						</p>
-					</div>
-					<div class="skills">
-						<h3 class="text-white"> -Skills </h3>
-						<ul class="mb-1">
-							<% data.skills.backend.split(',').each do |skill| %>
-								<li class="skill-list"><%= skill %></li>
-							<% end %>
-						</ul>
-						<ul>
-							<% data.skills.frontend.split(',').each do |skill| %>
-								<li class="skill-list"><%= skill %></li>
-							<% end %>
-						</ul>
-					</div>
-					<div class="cv">
-					<a class="text-white" href="https://www.canva.com/design/DAFLbA2ketQ/HThBkz6yogfz8TYxkUZ5Cg/view?utm_content=DAFLbA2ketQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">My CV</a>
-					</div>
-          <div class="cv">
-          <%= link_to 'My Blog', "partials/blog",class: "text-white" %>
-					</div>
-				</div>
-      </div>
+<div class="about">
+  <h1 class="white-title gradient-title">Mengrui Song</h1>
+  <div class="d-flex pt-3 align-items-center justify-content-between w-75">
+    <div class="profile-photo">
+      <img src="images/profile_photo.jpg" alt="profile photo" class="profile-photo">
     </div>
-  <%# </div>
+    <div class="self-intro">
+      <p class="text-white">
+        Hello, I'm Mengrui, a full stack Web developer based in Tokyo who loves to code and design websites!
+      </p>
+      <p class="text-white">
+        I am passionate about learning new technologies and making websites more efficient and stable.
+      </p>
+      <p class="text-white">
+        In my free time I enjoy hugging my beatiful cat Cumin,
+        <a class="text-white my-link" href="https://summerrock1017.wixsite.com/my-site">illustrating</a>
+        and doing yoga.
+      </p>
+    </div>
+  </div>
+  <div class="about-info mt-5">
+    <div class="skills">
+      <h3 class="text-white gradient-title"> -Skills </h3>
+      <ul class="mb-1">
+        <% data.skills.backend.split(',').each do |skill| %>
+          <li class="skill-list"><%= skill %></li>
+        <% end %>
+        <% data.skills.frontend.split(',').each do |skill| %>
+          <li class="skill-list"><%= skill %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="d-flex">
+      <h3 class="text-white gradient-title my-link"><%= link_to '-My CV', "https://www.canva.com/design/DAFLbA2ketQ/HThBkz6yogfz8TYxkUZ5Cg/view?utm_content=DAFLbA2ketQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" %></h3>
+      <h3 class="text-white gradient-title ml-5 my-link"><%= link_to '-Blog', "partials/blog"%></h3>
+    </div>
+  </div>
+</div>
+<%# </div>
 </div> %>
