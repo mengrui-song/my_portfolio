@@ -1,6 +1,7 @@
 #projects {
 	background-color: rgb(240, 240, 240);
-	padding-top: 48px;
+	padding: 48px;
+  height: 100vh;
 }
 
 .projects-title {
@@ -11,4 +12,36 @@
 	justify-content: center;
 	padding-top: 48px;
 	margin-bottom: 48px;
+}
+.project-image {
+  width: 300px;
+  // background-color: red;
+}
+.project-image img {
+  width: 100%;
+}
+
+.move-image {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  animation: fadeIn 2s;
+  transform: scale(1.2);
+  transition: transform 2s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(1) }
+  100% { opacity: 1; transform: scale(1.1)}
+}
+
+.fade-out {
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
