@@ -1,16 +1,13 @@
 <div id="projects">
-  <h1 class="projects-title"> - Works</h1>
-  <div class="d-flex">
+  <div class="d-flex project-container">
     <div class="project-image">
     </div>
     <div class="project-list">
-      <ul>
+      <h3 class="projects-title gradient-title"> - Projects</h3>
         <% data.projects.each do |project|%>
-          <li class="project"><%= project.name %></li>
+          <h3 class="project"><%= project.name %></h3>
         <% end %>
-      </ul>
     </div>
   </div>
 </div>
-
 <%= javascript_include_tag "show-project" %>
