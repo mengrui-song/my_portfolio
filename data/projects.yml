@@ -11,6 +11,7 @@
     { path: projects/health_way/03,
       desc: Employee will show the info to clinic and clinic can send health check result by Email or Fax }
   ]
+  background_color: '#93B9BC'
   live_url: https://www.healthway.live
   github_url: https://github.com/SummerSoong/Health_Way
 
@@ -21,6 +22,7 @@
     { path: projects/PlayerWon/00,
       desc: }
   ]
+  background_color: '#000000'
   live_url: https://player-won.herokuapp.com/
   github_url: https://github.com/SummerSoong/player-won
 
@@ -31,6 +33,7 @@
     { path: projects/Watchlist/00,
       desc: }
   ]
+  background_color: '#FFFFFF'
   live_url: https://watch-list-by-song.fly.dev/
   github_url: https://github.com/SummerSoong/watch-list-by-song
 

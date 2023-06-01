@@ -10,50 +10,73 @@
 	align-items: center;
 	justify-content: center;
 	padding-top: 48px;
-	margin-bottom: 48px;
+	margin-bottom: 16px;
 }
 
 .project-container {
-  border: blue solid 1px;
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 80%;
 }
 
-.project-list {
-  border: green solid 1px;
-  width: 25%;
+
+.project-left {
+  // border: yellow solid 1px;
+  width: 70%;
+  height: 100%;
 }
+
 .project-image {
-  border: red solid 1px;
-  width: 60%;
-  // background-color: red;
+  // border: red solid 1px;
+  border-bottom-right-radius: 5% 12%;
+  height: 100%;
+  padding: 32px 32px;
+
 }
 .project-image > img {
   width: 100%;
-  padding: 16px 16px 16px 0;
-  border-top-right-radius: 5%;
+}
+
+.project-right {
+  width: 25%;
+}
+.project-list {
+}
+
+.first-project {
+  //add border top and bottom
+  // border-top: black solid 1px;
+}
+.custom-line {
+  border: none;
+  height: 1.5px;
+  background-color: black;
+  margin: 0;
 }
 .project {
-  border-top: black solid 1px;
+  // border-bottom: black solid 1px;
+  margin-bottom: 0;
+  padding: 8px 0;
+  transition: transform 0.3s; /* Add a transition for smooth animation */
+}
+.project:hover {
+  color: rgb(125, 125, 125);
+  cursor: pointer;
+  transform: translateX(8px);
 }
 
 
 .fade-in {
   animation: fadeIn 2s;
-  transition: transform 2s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 
 }
 
 @keyframes fadeIn {
-  // transform scale in x only
-  0% { opacity: 0; transform: scale(0.9, 1, 1) }
-  100% { opacity: 1; transform: scale(1)}
-}
-
-.fade-out {
-  animation: fadeOut 2s;
+  // transform scale in x only, from left to right
+  0% { opacity: 0; transform: scale(0.95, 1) }
+  100% { opacity: 1; transform: scale(1, 1)}
 }
 
 @keyframes fadeOut {

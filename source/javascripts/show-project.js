@@ -36,11 +36,13 @@ projects.forEach((project) => {
   project.addEventListener("mouseover", (event) => {
     console.log("mouseover");
     console.log(project.innerHTML);
-    const projectName = project.innerHTML;
+    const projectName = project.innerHTML.replace(/\s+/g, '');
 
     // Create a new image element and set its source
     const newImage = document.createElement("img");
     newImage.src = `../images/projects/${projectName}/00.png`;
+    console.log("*" + projectName +"*");
+
     newImage.alt = "project image";
     newImage.classList.add("fade-in");
 
@@ -50,8 +52,14 @@ projects.forEach((project) => {
     // Remove the current project image if exists
     if (currentProjectImage) {
       projectImage.removeChild(currentProjectImage);
+      // remove background color from projectImage
+      projectImage.style.backgroundColor = "";
     }
 
+    //add arrow to project innerhtml
+    project.innerHTML = '<i class="fas fa-arrow-right"></i>'+ '  ' + project.innerHTML;
+    // add background color to projectImage
+    projectImage.style.backgroundColor = project.id;
     // Append the new image to the project image container
     projectImage.appendChild(newImage);
 
@@ -60,6 +68,9 @@ projects.forEach((project) => {
   });
 
   project.addEventListener("mouseout", (event) => {
+
+    // remove arrow i tag from project innerhtml
+    project.innerHTML = project.innerHTML.slice(30);
     // Add the fade-out class to initiate the fade-out transition
     projectImage.classList.add("fade-out");
 
@@ -67,6 +78,8 @@ projects.forEach((project) => {
     currentProjectImage.addEventListener("animationend", () => {
       projectImage.removeChild(currentProjectImage);
       currentProjectImage = null;
+      // remove background color from projectImage
+      projectImage.style.backgroundColor = "";
     });
   });
 });

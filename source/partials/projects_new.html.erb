@@ -1,12 +1,19 @@
 <div id="projects">
   <div class="d-flex project-container">
-    <div class="project-image">
+    <div class="project-left">
+      <div class="project-image">
+      </div>
     </div>
+    <div class="project-right d-flex align-items-end">
     <div class="project-list">
-      <h3 class="projects-title gradient-title"> - Projects</h3>
-        <% data.projects.each do |project|%>
-          <h3 class="project"><%= project.name %></h3>
-        <% end %>
+      <h1 class="projects-title gradient-title"> Projects</h1>
+      <hr class="custom-line">
+      <% first_project = data.projects.first %>
+      <% data.projects.each do |project|%>
+        <h3 class="project" id=<%= project.background_color %>><%= project.name %></h3>
+        <hr class="custom-line">
+      <% end %>
+    </div>
     </div>
   </div>
 </div>
