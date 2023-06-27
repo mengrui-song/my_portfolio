@@ -21,3 +21,8 @@ ul {
 .gray {
   color: $gray;
 }
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}

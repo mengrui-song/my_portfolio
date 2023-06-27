@@ -34,7 +34,7 @@
       desc: }
   ]
   background_color: '#FFFFFF'
-  live_url: https://watch-list-by-song.fly.dev/
+  live_url: https://watch-list-by-song.herokuapp.com/
   github_url: https://github.com/SummerSoong/watch-list-by-song
 
 # - name: YogiLife
