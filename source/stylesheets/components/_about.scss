@@ -18,11 +18,11 @@
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
   object-position: 50% 37%;
-  opacity: 85%;
+  opacity: 80%;
   border-radius: 50%;
 }
 
@@ -36,6 +36,7 @@
 
 .white-title {
   color: white;
+  opacity: .8;
   height: 160px;
   display: flex;
   align-items: center;
@@ -47,9 +48,10 @@
 
 
 .skill-list {
+  font-weight: bold;
   color: white;
   opacity: .8;
-  background-color: #121212;
+  background-color: #404042;
   display: inline-block;
   margin-right: 1px;
   padding: 8px;

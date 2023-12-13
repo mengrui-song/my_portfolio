@@ -2,11 +2,24 @@
   <div class="d-flex project-container">
     <div class="project-left">
       <div class="project-image">
+      <div class="skills">
+        <h3> ◆Skills </h3>
+        <ul class="mb-1">
+          <% data.skills.backend.split(',').each do |skill| %>
+                <li class="skill-list"><%= skill %></li>
+              <% end %>
+        </ul>
+        <ul class="mb-1">
+          <% data.skills.frontend.split(',').each do |skill| %>
+                <li class="skill-list"><%= skill %></li>
+              <% end %>
+        </ul>
+      </div>
       </div>
     </div>
     <div class="project-right d-flex align-items-end">
       <div class="project-list">
-        <h1 class="projects-title gradient-title"> Projects</h1>
+        <h1 class="projects-title"> Projects</h1>
         <hr class="custom-line">
         <% first_project = data.projects.first %>
         <% data.projects.each do |project|%>

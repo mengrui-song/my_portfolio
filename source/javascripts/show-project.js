@@ -1,32 +1,9 @@
-// console.log("show-project.js");
-
-// // define projects
-// const projects = document.querySelectorAll(".project");
-// const projectImage = document.querySelector(".project-image");
-// console.log(projects);
-
-// // check if one project is hovered
-// projects.forEach((project) => {
-
-//   project.addEventListener("mouseover", (event) => {
-//     console.log("mouseover");
-//     console.log(project.innerHTML);
-//     const projectName = project.innerHTML;
-
-//     projectImage.classList.add("move-image");
-//     projectImage.innerHTML = `<img src="../images/projects/${projectName}/00.png" alt="project image"/>`;
-//   });
-//   project.addEventListener("mouseout", (event) => {
-
-//       projectImage.innerHTML = "";
-//   });
-// });
-
 console.log("show-project.js");
 
 // Define projects and project image elements
 const projects = document.querySelectorAll(".project");
 const projectImage = document.querySelector(".project-image");
+const skills = document.querySelector(".skills");
 
 // Store the currently displayed project image
 let currentProjectImage = null;
@@ -36,6 +13,7 @@ projects.forEach((project) => {
   project.addEventListener("mouseover", (event) => {
     console.log("mouseover");
     console.log(project.innerHTML);
+    skills.style.display = "none";
     const projectName = project.innerHTML.replace(/\s+/g, '');
 
     // Create a new image element and set its source
@@ -80,6 +58,9 @@ projects.forEach((project) => {
       currentProjectImage = null;
       // remove background color from projectImage
       projectImage.style.backgroundColor = "";
+
+      // show my skills
+      skills.style.display = "block";
     });
   });
 });

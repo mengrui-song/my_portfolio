@@ -1,2 +1,2 @@
-backend: Ruby on Rails, Django (Python), PostgreSQL
-frontend: HTML, CSS, JavaScript, React.js
+backend: Ruby on Rails, Django (Python), PostgreSQL, MySQL
+frontend: HTML, CSS, JavaScript, React, Redux

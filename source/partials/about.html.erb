@@ -1,10 +1,8 @@
-<%# <div class="row my-5">
-  <div class="col-12"> %>
 <div class="about">
-  <h1 class="white-title gradient-title">Mengrui Song</h1>
+  <h1 class="white-title">Mengrui Song</h1>
   <div class="row pt-3 align-items-center justify-content-between w-75">
     <div class="profile-photo lg-col-3 sm-col-12">
-      <img src="images/profile_photo.jpg" alt="profile photo" class="profile-photo">
+      <img src="https://media.licdn.com/dms/image/D5603AQEvAqeyR0gr8w/profile-displayphoto-shrink_400_400/0/1686104243163?e=1707955200&v=beta&t=gXr8bRa6bJqTE1049Z_yV25dY_0tMObkTFRgsxqjlPY" alt="profile photo" class="profile-photo">
     </div>
     <div class="self-intro lg-col-9 sm-col-12">
       <p class="text-white">
@@ -20,23 +18,4 @@
       </p>
     </div>
   </div>
-  <div class="about-info mt-5">
-    <div class="skills">
-      <h3 class="text-white gradient-title"> -Skills </h3>
-      <ul class="mb-1">
-        <% data.skills.backend.split(',').each do |skill| %>
-          <li class="skill-list"><%= skill %></li>
-        <% end %>
-        <% data.skills.frontend.split(',').each do |skill| %>
-          <li class="skill-list"><%= skill %></li>
-        <% end %>
-      </ul>
-    </div>
-    <div class="d-flex">
-      <h6 class="text-white gradient-title my-link"><%= link_to ' ↓CV', "https://www.canva.com/design/DAFLbA2ketQ/HThBkz6yogfz8TYxkUZ5Cg/view?utm_content=DAFLbA2ketQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" %></h6>
-      <h6 class="text-white gradient-title ml-5 my-link"><%= link_to '↓Blog', "partials/blog"%></h6>
-    </div>
-  </div>
 </div>
-<%# </div>
-</div> %>

@@ -2,12 +2,20 @@
   text-decoration: underline dotted white;
 }
 
-.gradient-title {
-  background: -webkit-linear-gradient(#ffffff, #656565);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .text-white {
   color: white;
+  opacity: .8;
+}
+
+body {
+  font-family: Overpass;
+  color: #404042;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+}
+p {
+  opacity: .7;
 }
