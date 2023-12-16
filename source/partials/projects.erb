@@ -1,0 +1,58 @@
+<div id="projects">
+
+  <div class="d-flex project-container">
+    <div class="project-left">
+      <div class="skills">
+        <h1> ◆Skills </h1>
+        <ul class="mb-1">
+          <% data.skills.backend.split(',').each do |skill| %>
+                <li class="skill-list red-underline <%= skill.gsub(/\s+/, '') %>"><%= skill %></li>
+              <% end %>
+        </ul>
+        <ul class="mb-1">
+          <% data.skills.frontend.split(',').each do |skill| %>
+                <li class="skill-list red-underline <%= skill.gsub(/\s+/, '') %>"><%= skill %></li>
+
+              <% end %>
+        </ul>
+      </div>
+      <div class="project-details">
+        <% data.projects.each do |project| %>
+          <div class="<%= project.name %>" data-tools="<%= project.tools %>">
+            <div class="project-detail" style="background-color: <%= project.background_color %>">
+              <div class="d-flex flex-row border-three">
+                <p style="margin-bottom: 0;">◆Role: <%= project.role%></p>
+                <p style="margin-left: 32px; margin-bottom: 0">◆Team Size: <%= project.team_size%></p>
+              </div>
+              <p class="border-three" style= "margin-bottom: 0"><%= project.description %></p>
+              <ul class="border-four">
+                <% unless project.features.nil? %>
+                  <% project.features.split(';').each do |feature|%>
+                    <p style="margin-bottom: 0">●<%= feature %></p>
+                  <% end %>
+                <% end %>
+              </ul>
+              <div class="d-flex flex-row text-gray">
+                <a href="<%= project.github_url %>" target="_blank" class="red-underline">
+                  Github
+                </a>
+                <a href="<%= project.live_url %>" target="_blank" class="red-underline" style="margin-left: 32px">
+                  View Website
+                </a>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="project-right d-flex align-items-end">
+      <div class="project-list">
+        <h1 class="projects-title">◆Projects</h1>
+        <% data.projects.each do |project|%>
+          <h3 class="project project-underline" style="text-decoration-color: <%= project.background_color %>!important; text-decoration: underline" data-color="<%= project.background_color %>"><%= project.name %></h3>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<%= javascript_include_tag "show-project" %>

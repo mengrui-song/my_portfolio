@@ -1,45 +1,42 @@
 - name: HealthWay
-  description: An app helps HR to track employee's health check status and digitalizes employee's health check results.
-  tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image: [
-    { path: projects/health_way/00,
-      desc: HR sets a time frame for health },
-    { path: projects/health_way/01,
-      desc: Employee can assign a day and clinic to do the health check },
-    { path: projects/health_way/02,
-      desc: HR can check the status of employee’s health checks },
-    { path: projects/health_way/03,
-      desc: Employee will show the info to clinic and clinic can send health check result by Email or Fax }
-  ]
+  role: back-end developer
+  team_size: 4
+  description: A web app helps HR track employee's health check status and digitalizes employee's health check results.
+  features: Helps HR to manage employee's annual health check results by sending fax or email attachments to the app;
+            Sends reminders to employees  by Slack and email for annual health check;
+            Tracks status with live data
+  tools: Ruby on Rails, PostgreSQL, HTML, CSS, JavaScript, Heroku, Redux
   background_color: '#93B9BC'
   live_url: https://www.healthway.live
   github_url: https://github.com/SummerSoong/Health_Way
 
 - name: PlayerWon
-  description: An app connects game players and provide them a platform to exchange gaming skills
-  tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image: [
-    { path: projects/PlayerWon/00,
-      desc: }
-  ]
-  background_color: '#000000'
+  role: back-end developer
+  team_size: 4
+  description: A web app connects game players and provide them a platform to exchange gaming skills
+  features: User can find coaches and also can become a coach at games they are good at;
+            As a learner, user can book a lesson with a coach;
+            As a coach, user can create a lesson, review the booking requests and accept or reject them
+  tools: Ruby on Rails, PostgreSQL, HTML, CSS, JavaScript, Heroku
+  background_color: '#EEC759'
   live_url: https://player-won.herokuapp.com/
   github_url: https://github.com/SummerSoong/player-won
 
 - name: Watchlist
-  description: An app to record your own movie watch list, you can find more than 800 thousand movies from The Movie Database
-  tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
-  image: [
-    { path: projects/Watchlist/00,
-      desc: }
-  ]
-  background_color: '#FFFFFF'
+  role: full-stack developer
+  team_size: 1
+  description: An app to record your own watch list
+  features: You can find more than 800 thousand movies from The Movie Database;
+            You can create a movie list or a person list;
+            You can find the movies of a person or find the people of a movie;
+  tools: Ruby on Rails, PostgreSQL, HTML, CSS, JavaScript, Heroku
+  background_color: '#BB9CC0'
   live_url: https://watch-list-by-song.herokuapp.com/
   github_url: https://github.com/SummerSoong/watch-list-by-song
 
 # - name: YogiLife
 #   description:
-#   tools: Ruby on Rails | PostgreSQL | HTML | CSS | JavaScript | Heroku
+#   tools: Ruby on Rails, PostgreSQL, HTML, CSS, JavaScript, Heroku
 #   image: projects/health_way.png
 #   live_url: https://www.google.com
 #   github_url: https://github.com/SummerSoong/

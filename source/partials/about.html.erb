@@ -1,19 +1,41 @@
 <div class="about">
-  <h1 class="white-title">Mengrui Song</h1>
+  <div class="right-corner row my-5 text-white">
+    <div class="col-12">
+      <div id="contact">
+        <div class="d-flex justify-content-center flex-wrap">
+          <div class="button-social d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-solid fa-envelope"></i>
+            <%= mail_to "summerrock1017@gmail.com", "", class: 'button-social-link' %>
+          </div>
+          <div class="button-social d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-brands fa-github"></i>
+            <%= link_to "", "https://github.com/SummerSoong", target: '_blank', class: 'button-social-link' %>
+          </div>
+          <div class="button-social d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-brands fa-linkedin"></i>
+            <%= link_to "", "https://www.linkedin.com/in/mengruisong/", target: '_blank', class: 'button-social-link' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="row pt-3 align-items-center justify-content-between w-75">
-    <div class="profile-photo lg-col-3 sm-col-12">
+    <div class="profile-photo">
       <img src="https://media.licdn.com/dms/image/D5603AQEvAqeyR0gr8w/profile-displayphoto-shrink_400_400/0/1686104243163?e=1707955200&v=beta&t=gXr8bRa6bJqTE1049Z_yV25dY_0tMObkTFRgsxqjlPY" alt="profile photo" class="profile-photo">
     </div>
-    <div class="self-intro lg-col-9 sm-col-12">
-      <p class="text-white">
-        Hello, I'm Mengrui, a full stack Web developer based in Tokyo who loves to code and design websites!
-      </p>
-      <p class="text-white">
+    <div class="self-intro">
+      <div class="pic-in-text">
+        <p class="text-white">
+          Hello, I'm <strong id="my-name">Mengrui</strong>, a <strong id="my-position">full stack Web developer</strong>
+          based in <strong id="tokyo">Tokyo</strong>, who loves to code and design websites.
+        </p>
+      </div>
+      <p class="text-white" style="margin-bottom: 0">
         I am passionate about learning new technologies and making websites more efficient and stable.
       </p>
       <p class="text-white">
-        In my free time I enjoy hugging my beatiful cat Cumin,
-        <a class="text-white my-link" href="https://summerrock1017.wixsite.com/my-site">illustrating</a>
+        In my free time I enjoy hugging my beatiful cat <strong id="cumin">Cumin</strong>,
+        <a class="red-underline" href="https://summerrock1017.wixsite.com/my-site">illustrating</a>
         and doing yoga.
       </p>
     </div>

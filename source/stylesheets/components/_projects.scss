@@ -1,85 +1,102 @@
 #projects {
-	background-color: rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240);
   height: 100vh;
-}
-
-.projects-title {
-	// color: white;
-	height: 80px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 48px;
-	margin-bottom: 16px;
 }
 
 .project-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
-
 
 .project-left {
-  // border: yellow solid 1px;
   width: 70%;
   height: 100%;
+  position: relative;
 }
 
-.project-image {
-  // border: red solid 1px;
-  border-bottom-right-radius: 5% 12%;
-  height: 100%;
-  padding: 32px 32px;
-
+.skills {
+  margin: 16px 16px;
+  height: 20%;
 }
-.project-image > img {
+
+.skill-list {
+  font-weight: bold;
+  opacity: .8;
+  display: inline;
+  margin-right: 1px;
+  padding: 2px 8px;
+}
+
+.project-detail {
+  border-top-right-radius: 15% 25%;
+  margin-top: 32px;
+  margin-bottom: 0;
+  padding-left: 128px;
+  padding-right: 128px;
+  padding-top: 96px;
+  background-color: #93B9BC;
+  position: absolute;
+  bottom: 0;
+  height: 70%;
   width: 100%;
 }
+.projects-title {
+  height: 60px;
+  width: 210px;
+}
+
+
+
+
+
+
+
+
 
 .project-right {
   width: 25%;
 }
-.project-list {
+
+
+.project {
+  margin-bottom: 0;
+  padding: 4px 4px;
+  transition: transform 0.3s;
+  border-radius: 4px;
+  width: max-content;
 }
 
-.first-project {
-  //add border top and bottom
-  // border-top: black solid 1px;
-}
-.custom-line {
-  border: none;
-  height: 1.5px;
-  background-color: black;
-  margin: 0;
-}
-.project {
-  // border-bottom: black solid 1px;
-  margin-bottom: 0;
-  padding: 8px 0;
-  transition: transform 0.3s; /* Add a transition for smooth animation */
-}
 .project:hover {
-  color: rgb(125, 125, 125);
+  // color: rgb(125, 125, 125);
   cursor: pointer;
   transform: translateX(8px);
 }
 
 
-.fade-in {
-  animation: fadeIn 2s;
-  transition: transform 1.5s ease-in-out;
+.border-three {
+  // border-top: 2px dashed rgba(255, 255, 255, 0.8);
+  // border-left: 2px dashed rgba(255, 255, 255, 0.8);
+  // border-right: 2px dashed rgba(255, 255, 255, 0.8);
+  border-top: 4px dotted rgba(255, 255, 255, 0.8);
+  padding-top: 8px;
+  padding-bottom: 8px;
 
 }
 
-@keyframes fadeIn {
-  // transform scale in x only, from left to right
-  0% { opacity: 0; transform: scale(0.95, 1) }
-  100% { opacity: 1; transform: scale(1, 1)}
+.border-four {
+  border-top: 4px dotted rgba(255, 255, 255, 0.8);
+  border-bottom: 4px dotted rgba(255, 255, 255, 0.8);
+  padding-top: 8px;
+  padding-bottom: 8px;
+
 }
 
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+.project-underline {
+  background-repeat: no-repeat;
+  background-position: 120%, 122%, 7px 80%;
+  background-size: 86% 2px;
+  transition: all 0.3s;
+
 }

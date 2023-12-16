@@ -2,11 +2,7 @@
   padding-top: 48px;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  // background-image: url("../../images/profile_photo.jpg");
-  // background-size:contain;
-  // background-repeat: no-repeat;
+  justify-content: center;
 }
 
 .greeting {
@@ -26,14 +22,9 @@
   border-radius: 50%;
 }
 
-.about-info {
-  padding-left: 32px;
-  // width:min($numbers: 360px);
-  p {
-    opacity: .8;
-  }
+.self-intro {
+  width: 80%;
 }
-
 .white-title {
   color: white;
   opacity: .8;
@@ -45,14 +36,50 @@
   margin-bottom: 48px;
 }
 
+.right-corner {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
 
+.text-white strong {
+  transition: 0.8s; /* Add smooth transition for the color change */
+}
 
-.skill-list {
-  font-weight: bold;
-  color: white;
-  opacity: .8;
-  background-color: #404042;
-  display: inline-block;
-  margin-right: 1px;
-  padding: 8px;
+#my-position:hover {
+  font-size: 36px;
+  background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#my-name:hover {
+  font-size: 36px;
+  background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,45,29,1) 64%, rgba(252,176,69,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+#cumin {
+  transition: font-size 0.4s ease;
+}
+#cumin:hover {
+  font-size: 32px;
+}
+#cumin:hover:after{
+  content: "🐈";
+  font-size: 32px;
+}
+
+#tokyo {
+  transition: font-size 0.4s ease;
+}
+#tokyo:hover {
+  font-size: 32px;
+}
+#tokyo:hover:after{
+  content: "🗼";
+  font-size: 32px;
+  // add transition
+  transition: all 0.4s ease;
 }

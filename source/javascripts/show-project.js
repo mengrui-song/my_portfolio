@@ -2,65 +2,53 @@ console.log("show-project.js");
 
 // Define projects and project image elements
 const projects = document.querySelectorAll(".project");
-const projectImage = document.querySelector(".project-image");
 const skills = document.querySelector(".skills");
+const projectDetails = document.querySelector(".project-details");
 
-// Store the currently displayed project image
-let currentProjectImage = null;
-
+const allProjects = projectDetails.cloneNode(true);
+projectDetails.style.display = "none";
 // Check if a project is hovered
 projects.forEach((project) => {
-  project.addEventListener("mouseover", (event) => {
-    console.log("mouseover");
-    console.log(project.innerHTML);
-    skills.style.display = "none";
-    const projectName = project.innerHTML.replace(/\s+/g, '');
+  projectDetails.style.display = "none";
 
-    // Create a new image element and set its source
-    const newImage = document.createElement("img");
-    newImage.src = `../images/projects/${projectName}/00.png`;
-    console.log("*" + projectName +"*");
+  project.addEventListener("click", (event) => {
+    removeActiveOnSkills();
+    removeStylesOnProjects();
 
-    newImage.alt = "project image";
-    newImage.classList.add("fade-in");
+    // add background color to project name
+    const projectColor = event.target.getAttribute("data-color");
+    project.style.backgroundColor = projectColor;
 
-    // Remove the fade-out class from the project image to reset the animation
-    projectImage.classList.remove("fade-out");
+    // display the project details
+    const projectName = event.target.innerText;
+    const display = allProjects.querySelector(`.${projectName}`);
+    projectDetails.innerHTML = display.innerHTML;
+    projectDetails.style.display = "block";
 
-    // Remove the current project image if exists
-    if (currentProjectImage) {
-      projectImage.removeChild(currentProjectImage);
-      // remove background color from projectImage
-      projectImage.style.backgroundColor = "";
-    }
-
-    //add arrow to project innerhtml
-    project.innerHTML = '<i class="fas fa-arrow-right"></i>'+ '  ' + project.innerHTML;
-    // add background color to projectImage
-    projectImage.style.backgroundColor = project.id;
-    // Append the new image to the project image container
-    projectImage.appendChild(newImage);
-
-    // Update the current project image
-    currentProjectImage = newImage;
+    // add active class to skills for this project
+    const tools = display.getAttribute("data-tools").split(",");
+    tools.forEach((tool) => {
+      const tool_trimed = tool.replace(/\s/g, '')
+      const skill = skills.querySelector(`.skill-list.${tool_trimed}`);
+      if (skill) {
+        skill.classList.add("active")
+      }
+    })
   });
 
-  project.addEventListener("mouseout", (event) => {
-
-    // remove arrow i tag from project innerhtml
-    project.innerHTML = project.innerHTML.slice(30);
-    // Add the fade-out class to initiate the fade-out transition
-    projectImage.classList.add("fade-out");
-
-    // Remove the current project image after the fade-out animation ends
-    currentProjectImage.addEventListener("animationend", () => {
-      projectImage.removeChild(currentProjectImage);
-      currentProjectImage = null;
-      // remove background color from projectImage
-      projectImage.style.backgroundColor = "";
-
-      // show my skills
-      skills.style.display = "block";
-    });
-  });
 });
+
+function removeActiveOnSkills() {
+  const actives = skills.querySelectorAll(".skill-list.active");
+  if (actives) {
+    actives.forEach((active) => {
+      active.classList.remove("active");
+    });
+  }
+}
+
+function removeStylesOnProjects() {
+  projects.forEach((project) => {
+    project.style.backgroundColor = "";
+  });
+}
