@@ -5,7 +5,7 @@
   features: Helps HR to manage employee's annual health check results by sending fax or email attachments to the app;
             Sends reminders to employees  by Slack and email for annual health check;
             Tracks status with live data
-  tools: Ruby on Rails, PostgreSQL, HTML, CSS, JavaScript, Heroku, Redux
+  tools: Ruby on Rails, PostgreSQL, HTML, CSS, JavaScript, Heroku
   background_color: '#93B9BC'
   live_url: https://www.healthway.live
   github_url: https://github.com/SummerSoong/Health_Way
@@ -34,10 +34,9 @@
   live_url: https://watch-list-by-song.herokuapp.com/
   github_url: https://github.com/SummerSoong/watch-list-by-song
 
-# - name: YogiLife
-#   description:
-#   tools: Ruby on Rails, PostgreSQL, HTML, CSS, JavaScript, Heroku
-#   image: projects/health_way.png
-#   live_url: https://www.google.com
-#   github_url: https://github.com/SummerSoong/
-#   youtube_url: https://youtube.com
+- name: YogaFlashcard
+  description: A web app makes remembering yoga poses easier
+  tools: React, HTML, CSS
+  background_color: '#CE5A67'
+  live_url: https://summersoong.github.io/yoga-flashcard/
+  github_url: https://github.com/SummerSoong/yoga-flashcard

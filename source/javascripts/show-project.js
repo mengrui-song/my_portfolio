@@ -17,6 +17,7 @@ projects.forEach((project) => {
 
     // add background color to project name
     const projectColor = event.target.getAttribute("data-color");
+    project.style.transition = "all 0.5s ease-in-out";
     project.style.backgroundColor = projectColor;
 
     // display the project details
@@ -24,6 +25,7 @@ projects.forEach((project) => {
     const display = allProjects.querySelector(`.${projectName}`);
     projectDetails.innerHTML = display.innerHTML;
     projectDetails.style.display = "block";
+
 
     // add active class to skills for this project
     const tools = display.getAttribute("data-tools").split(",");

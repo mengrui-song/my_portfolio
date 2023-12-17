@@ -6,12 +6,12 @@
         <h1> ◆Skills </h1>
         <ul class="mb-1">
           <% data.skills.backend.split(',').each do |skill| %>
-                <li class="skill-list red-underline <%= skill.gsub(/\s+/, '') %>"><%= skill %></li>
+                <li class="skill-list <%= skill.gsub(/\s+/, '') %>"><%= skill %></li>
               <% end %>
         </ul>
         <ul class="mb-1">
           <% data.skills.frontend.split(',').each do |skill| %>
-                <li class="skill-list red-underline <%= skill.gsub(/\s+/, '') %>"><%= skill %></li>
+                <li class="skill-list <%= skill.gsub(/\s+/, '') %>"><%= skill %></li>
 
               <% end %>
         </ul>
@@ -25,13 +25,13 @@
                 <p style="margin-left: 32px; margin-bottom: 0">◆Team Size: <%= project.team_size%></p>
               </div>
               <p class="border-three" style= "margin-bottom: 0"><%= project.description %></p>
-              <ul class="border-four">
-                <% unless project.features.nil? %>
-                  <% project.features.split(';').each do |feature|%>
-                    <p style="margin-bottom: 0">●<%= feature %></p>
-                  <% end %>
-                <% end %>
-              </ul>
+              <% unless project.features.nil? %>
+                <ul class="border-four">
+                    <% project.features.split(';').each do |feature|%>
+                      <p style="margin-bottom: 0">●<%= feature %></p>
+                    <% end %>
+                </ul>
+              <% end %>
               <div class="d-flex flex-row text-gray">
                 <a href="<%= project.github_url %>" target="_blank" class="red-underline">
                   Github
