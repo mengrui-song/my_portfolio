@@ -35,6 +35,8 @@
   github_url: https://github.com/SummerSoong/watch-list-by-song
 
 - name: YogaFlashcard
+  role: front-end developer
+  team_size: 1
   description: A web app makes remembering yoga poses easier
   tools: React, HTML, CSS
   background_color: '#CE5A67'
